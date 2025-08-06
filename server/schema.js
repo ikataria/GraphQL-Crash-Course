@@ -1,4 +1,17 @@
 export const typeDefs = `#graphql
+
+    #INPUTS
+    input AddGameInput{
+        title: String!,
+        platform: [String!]!
+    }
+
+    input EditGameInput{
+        title: String,
+        platform: [String]
+    }
+
+    # TYPES
     type Game{
         id: ID!
         title: String!
@@ -21,6 +34,7 @@ export const typeDefs = `#graphql
         author: Author!
     }
 
+    # END-POINTS
     # This is the entry point to the Graph using special query type. This is root query
     type Query{
         games: [Game],
@@ -37,14 +51,5 @@ export const typeDefs = `#graphql
         updateGame(id: ID!, edits: EditGameInput!): Game
     }
 
-    input AddGameInput{
-        title: String!,
-        platform: [String!]!
-    }
 
-    input EditGameInput{
-        title: String,
-        platform: [String]
-
-    }
 `
