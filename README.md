@@ -2,7 +2,8 @@
 
 This is a short GraphQL crash course project based on the tutorial offered by **FreeCodeCamp** and developed by **NetNinja**.
 
-- **Course link:** [GraphQL Crash Course](https://www.youtube.com/watch?v=5199E50O7SI&t=4910s)
+- **Course link:** [Apollo Server](https://www.youtube.com/watch?v=5199E50O7SI&t=4910s)
+- **Course link:** [Apollo Client](https://www.youtube.com/watch?v=BNYwj0ZvU1U&t=2134s)
 
 ## How to Run the Project
 
@@ -25,3 +26,5 @@ query ReviewQuery($id: ID!) {
     content
   }
 }
+
+
