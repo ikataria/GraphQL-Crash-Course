@@ -1,0 +1,6 @@
+query GetGameById($id: ID!) {
+  game(id: $id) {
+    id
+    title
+  }
+}

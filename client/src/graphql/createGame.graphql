@@ -1,0 +1,7 @@
+
+ mutation CreateGame($game: AddGameInput!) {
+    addGame(game: $game) {
+      title
+      platform
+    }
+  }
